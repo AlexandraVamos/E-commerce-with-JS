@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing - Best Online Store</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/product.css">
+    <script src="folder.json"></script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav">
+            <a href="index.html"> <img src="img/dark-logo.png" class="brand-logo" alt=""></a>
+            <div class="nav-items">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Search</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <button class="search-btn" id="click-btn"
+                            onclick="window.location.href='index.html?search=' + document.getElementById('myInput').value">
+                        </button>
+                        <input type="text" placeholder="Search here..." id="myInput" onkeyup="processChange()">
+                        <div id="search-items" class="max"></div>
+                    </div>
+                </div>
+                <a href="cart.html"><img src="img/cart.svg" alt=""></a>
+            </div>
+        </div>
+        <div id="sort">
+            <div class="dropdown-sort">
+                <button class="dropbtn-sort">Sort By <a href=""><img src="img/sort.svg" class="sort-icon"
+                            alt=""></a></button>
+                <div class="dropdown-content-sort">
+                    <a href="index.html?sort_type=Ascending">Ascendent Sort</a>
+                    <a href="index.html?sort_type=Descending">Descendent Sort</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="product">
+
+        <div id="product-container"></div>
+
+    </section>
+
+    <footer class="footer"></footer>
+
+    <!-- <script src="js/nav.js"></script> -->
+    <script src="js/footer.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
